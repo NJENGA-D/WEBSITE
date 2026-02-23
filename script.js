@@ -18,11 +18,9 @@ document.getElementById("heroBtn").addEventListener("click", () => {
 const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    message.textContent = "WELCOM!";
-    message.style.color = "RED";
-    
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  message.textContent = "Message sent (frontend only)";
+  message.style.color = "green";
+  form.reset();
 });
-
